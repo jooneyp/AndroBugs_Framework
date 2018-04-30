@@ -1835,7 +1835,7 @@ It is used by the developers to protect the app:""", ["Hacker"])
 			list_Runtime_exec.append(i.getPath())
 
 	if path_Runtime_exec:
-		writer.startWriter("COMMAND", LEVEL_CRITICAL, "Runtime Command Checking", "This app is using critical function 'Runtime.getRuntime().exec(\"...\")'.\nPlease confirm these following code secions are not harmful:", ["Command"])
+		writer.startWriter("COMMAND", LEVEL_CRITICAL, "Runtime Command Checking", "This app is using critical function 'Runtime.getRuntime().exec(\"...\")'.\nPlease confirm these following code sections are not harmful:", ["Command"])
 
 		writer.show_Paths(d, path_Runtime_exec)
 
